@@ -1,0 +1,40 @@
+{
+    "albumTitle": "taylor swift",
+    "albumList": [
+        {
+            "title": "Palette",
+            "artist": "IU",
+            "url": "https://www.kkbox.com/tw/tc/song/Gt2qEuPe-2a5_lbr5_",
+            "image": "https://assets.juksy.com/files/articles/117587/800x_100_w-6326fc00bcde6.jpg",
+            "thumbnail_img": "https://upload.wikimedia.org/wikipedia/zh/1/15/IU_-_Palette.jpg"
+        },
+        {
+            "title": "Dear Name",
+            "artist": "IU",
+            "url": "https://www.kkbox.com/tw/tc/song/Gt2qEuPe-2a5_lbr5_",
+            "image": "https://www.kpopn.com/upload/62614e7c9c77270d65bf.jpg",
+            "thumbnail_img": "https://upload.wikimedia.org/wikipedia/zh/1/15/IU_-_Palette.jpg"
+        },
+        {
+            "title": "Jam Jam",
+            "artist": "IU",
+            "url": "https://www.kkbox.com/tw/tc/song/Gt2qEuPe-2a5_lbr5_",
+            "image": "https://p3-sdbk2-media.byteimg.com/tos-cn-i-xv4ileqgde/9909135243004ca890ef14ec06f267a2~tplv-xv4ileqgde-resize-w:750.image",
+            "thumbnail_img": "https://upload.wikimedia.org/wikipedia/zh/1/15/IU_-_Palette.jpg"
+        },
+        {
+            "title": "Full Stop",
+            "artist": "IU",
+            "url": "https://www.kkbox.com/tw/tc/song/Gt2qEuPe-2a5_lbr5_",
+            "image": "https://i.ytimg.com/vi/ijprQs5X0hE/hqdefault.jpg",
+            "thumbnail_img": "https://upload.wikimedia.org/wikipedia/zh/1/15/IU_-_Palette.jpg"
+        },
+        {
+            "title": "Black Out",
+            "artist": "IU",
+            "url": "https://www.kkbox.com/tw/tc/song/Gt2qEuPe-2a5_lbr5_",
+            "image": "https://www.niusnews.com/upload/imgs/default/2020Jan_JENNNNNN/Celebrity/1.jpg",
+            "thumbnail_img": "https://upload.wikimedia.org/wikipedia/zh/1/15/IU_-_Palette.jpg"
+        }
+    ]
+}
