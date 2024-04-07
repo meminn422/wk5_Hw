@@ -1,0 +1,92 @@
+import React from 'react';
+import { StyleSheet, Text, Image } from 'react-native';
+import { Center, Box, Button, ButtonText, VStack } from "@gluestack-ui/themed";
+
+import img0 from '../../src/img/img_book_fashinopolis.png';
+import img1 from '../../src/img/img_book_chanel.png';
+import img2 from '../../src/img/img_book_calligraphy.png';
+import img3 from '../../src/img/img_book_ysl.png';
+import img4 from '../../src/img/img_book_tbos.png';
+import img5 from '../../src/img/img_book_stitchedup.png';
+
+const images = [img0, img1, img2, img3, img4, img5];
+const DetailScreen = ({ route }) => {
+  // 从 route.params 中获取传递过来的参数
+  const {
+    title,
+    artist,
+    id,
+    descriptions
+  } = route.params;
+  
+  return (
+    <Center backgroundColor='#fff' flex={1} >
+      <VStack>
+        <Center pt={50} pb={20}>
+          <Image
+            style={{ width: 210, height: 300, }}
+            source={images[id]}
+          />
+        </Center>
+
+        <Box pt={10} pb={10}>
+          <Center>
+            <Text style={styles.title}>{title}</Text>
+            <Text style={styles.artist}>{artist}</Text>
+          </Center>
+        </Box>
+        <Center>
+          <Text style={styles.descriptions}>{descriptions}</Text>
+        </Center>
+
+        <Center paddingBottom={200}>
+          <Button
+            width={200}
+            
+            bgColor='#6200EE'
+            onPress={() => null}
+          >
+            <ButtonText style={styles.buy_content} >
+              BUY NOW FOR $46.99
+            </ButtonText>
+          </Button>
+        </Center>
+      </VStack>
+    </Center>
+
+  );
+}
+
+const styles = StyleSheet.create({
+  title: {
+    fontFamily: "Roboto",
+    fontSize: 24,
+    fontWeight: "bold",
+    paddingTop: 10,
+    paddingBottom: 2
+  },
+  artist: {
+    fontFamily: "Roboto",
+    fontSize: 14,
+    paddingTop: 10,
+    paddingBottom: 10
+  },
+ 
+  descriptions: {
+    width: 320,
+    textAlign: "center",
+    fontSize: 14,
+    fontFamily: "Roboto",
+    lineHeight: 24,
+    paddingBottom: 30
+  },
+  buy_content: {
+    fontSize: 14,
+    fontFamily: "Roboto",
+    lineHeight: 16,
+    // paddingBottom: 30,
+    fontWeight: 500
+  }
+})
+
+export default DetailScreen;
