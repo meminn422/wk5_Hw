@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, Image } from 'react-native';
-import { Center, Box, Button, ButtonText, VStack } from "@gluestack-ui/themed";
+import { Center, Box, Button, ButtonText, VStack ,HStack} from "@gluestack-ui/themed";
 
 import img0 from '../../src/img/img_book_fashinopolis.png';
 import img1 from '../../src/img/img_book_chanel.png';
@@ -9,6 +9,8 @@ import img3 from '../../src/img/img_book_ysl.png';
 import img4 from '../../src/img/img_book_tbos.png';
 import img5 from '../../src/img/img_book_stitchedup.png';
 
+import Stars from '../components/Star';
+
 const images = [img0, img1, img2, img3, img4, img5];
 const DetailScreen = ({ route }) => {
   // 从 route.params 中获取传递过来的参数
@@ -16,6 +18,7 @@ const DetailScreen = ({ route }) => {
     title,
     artist,
     id,
+    star,
     descriptions
   } = route.params;
   
@@ -33,6 +36,10 @@ const DetailScreen = ({ route }) => {
           <Center>
             <Text style={styles.title}>{title}</Text>
             <Text style={styles.artist}>{artist}</Text>
+            <HStack style={styles.star}>
+              <Stars count={star} />
+              <Text style={styles.rate}>{`${star}`}.0/5.0</Text>
+            </HStack>
           </Center>
         </Box>
         <Center>
@@ -69,6 +76,13 @@ const styles = StyleSheet.create({
     fontFamily: "Roboto",
     fontSize: 14,
     paddingTop: 10,
+    paddingBottom: 10
+  },
+  rate: {
+    paddingLeft: 10
+  },
+  star: {
+    marginTop: 1,
     paddingBottom: 10
   },
  

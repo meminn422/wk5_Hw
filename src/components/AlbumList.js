@@ -17,7 +17,7 @@ const AlbumList = ({list}) => {
     </>
     );
   };
-  
+
   const render = () => null;
 
   return(

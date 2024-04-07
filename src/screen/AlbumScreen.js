@@ -5,7 +5,7 @@ import book from "../json/book1.json";
 
 const AlbumScreen = () => {
   return (
-    <View style={{ flex:1 }}>
+    <View style={{ backgroundColor: "#fff", height: 800 }}>
       <AlbumList list={book}/>
     </View>
   );

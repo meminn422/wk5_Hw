@@ -4,7 +4,7 @@ import { Image, View, StyleSheet } from "react-native";
 const Stars = ({ count }) => {
   const starbox = [];
   for (let i = 0; i < count; i++) {
-    starbox.push(<Image source={require("../img/icon_starfilled.png")} style={styles.star} />)
+    starbox.push(<Image source={require("../img/icon_star_filled.png")} style={styles.star} />)
   }
   
   let s = starbox.length;
